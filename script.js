@@ -41,6 +41,14 @@ recognition.addEventListener("result", (e) => {
     console.log("opening whatsapp");  
     window.open("https://web.whatsapp.com/");  
    }
+   if (text.includes("comedy")) {  
+    p = document.createElement("p");  
+    p.classList.add("replay");  
+    p.innerText = "opening youtube channel";  
+    texts.appendChild(p);  
+    console.log("opening youtube");  
+    window.open("https://www.youtube.com/results?search_query=stand+up+comedy");  
+   }
    if (text.includes("cs50")) {  
     p = document.createElement("p");  
     p.classList.add("replay");  
